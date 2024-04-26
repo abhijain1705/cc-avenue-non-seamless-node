@@ -1,0 +1,45 @@
+{
+  "name": "ccavenuenonseamlessnode",
+  "version": "1.0.0",
+  "description": "this is open source npm package to integrate cc avenue payment gateway with nodejs application",
+  "main": "ccavRequestHandler.js",
+  "scripts": {
+    "start": "npm run build && node ./build/app.js",
+    "start:dev": "nodemon --exec babel-node ./app.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./app.js -s",
+    "build": "npm run clean && npm run build-babel"
+  },
+  "author": "abhi jain",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.24.1",
+    "crypto": "^1.0.1",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/node": "^7.23.9",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/runtime": "^7.24.4",
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "globals": "^15.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "cc-avenue",
+    "nodejs",
+    "open-source"
+  ]
+}
