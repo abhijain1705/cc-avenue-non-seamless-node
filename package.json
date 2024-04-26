@@ -1,8 +1,8 @@
 {
-  "name": "ccavenuenonseamlessnode",
+  "name": "cc-aveunue-non-seamless-node",
   "version": "1.0.0",
   "description": "this is open source npm package to integrate cc avenue payment gateway with nodejs application",
-  "main": "ccavRequestHandler.js",
+  "main": "app.js",
   "scripts": {
     "start": "npm run build && node ./build/app.js",
     "start:dev": "nodemon --exec babel-node ./app.js",
@@ -41,5 +41,13 @@
     "cc-avenue",
     "nodejs",
     "open-source"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhijain1705/cc-avenue-non-seamless-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhijain1705/cc-avenue-non-seamless-node/issues"
+  },
+  "homepage": "https://github.com/abhijain1705/cc-avenue-non-seamless-node#readme"
 }

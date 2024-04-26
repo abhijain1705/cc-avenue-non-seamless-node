@@ -1,9 +1,12 @@
-const CCAvenueNonSeamlessNode = require("../app"); // Import the class
+const CCAvenueNonSeamlessNode = require("cc-aveunue-non-seamless-node"); // Import the class
 
 // Create an instance of CCAvenueNonSeamlessNode
 const ccavInstance = new CCAvenueNonSeamlessNode();
 
-// Call the getAlgorithm method on the instance
-const algorithm = ccavInstance.getAlgorithm("yourKeyBase64");
+// Call the paymenturl method on the instance
+const paymenturl = ccavInstance.getPaymentResponse(
+  "yourKeyBase64",
+  "workingkey"
+);
 
-console.log(algorithm); // Print the algorithm
+console.log(paymenturl); // Print the paymenturl

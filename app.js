@@ -21,7 +21,11 @@ class CCAvenueNonSeamlessNode {
     const key = Buffer.from(keyBase64, "base64");
     const iv = Buffer.from(ivBase64, "base64");
 
-    const decipher = crypto.createDecipheriv(_getAlgorithm(keyBase64), key, iv);
+    const decipher = crypto.createDecipheriv(
+      this.__getAlgorithm(keyBase64),
+      key,
+      iv
+    );
     let decrypted = decipher.update(messagebase64, "hex");
     decrypted += decipher.final();
     return decrypted;
@@ -31,7 +35,11 @@ class CCAvenueNonSeamlessNode {
     const key = Buffer.from(keyBase64, "base64");
     const iv = Buffer.from(ivBase64, "base64");
 
-    const cipher = crypto.createCipheriv(_getAlgorithm(keyBase64), key, iv);
+    const cipher = crypto.createCipheriv(
+      this.__getAlgorithm(keyBase64),
+      key,
+      iv
+    );
     let encrypted = cipher.update(plainText, "utf8", "hex");
     encrypted += cipher.final("hex");
     return encrypted;
