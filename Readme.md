@@ -1,6 +1,6 @@
 # CCAvenueNonSeamlessNode
 
-[![npm version](https://img.shields.io/npm/v/YOUR_PACKAGE_NAME.svg)](https://www.npmjs.com/package/cc-avenue-non-seamless-node)
+[![npm version](https://img.shields.io/npm/v/YOUR_PACKAGE_NAME.svg)](https://www.npmjs.com/package/cc-aveunue-non-seamless-node)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/YOUR_USERNAME/YOUR_PACKAGE_NAME/blob/main/LICENSE)
 
 Node Module for integrating CCAvenue Payment gateway in Node.js Seamless
